@@ -1,10 +1,10 @@
 import { Field, ObjectType, ID } from "type-graphql";
-import { Entity, OneToMany, PrimaryGeneratedColumn, Column, ManyToOne, OneToOne } from "typeorm";
+import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, BaseEntity } from "typeorm";
 import User from "./UserModel";
 
-@Entity()
+@Entity({ name: "video" })
 @ObjectType()
-export class Video {
+export class Video extends BaseEntity {
     @Field(() => ID)
     @PrimaryGeneratedColumn("uuid")
     public id: string;

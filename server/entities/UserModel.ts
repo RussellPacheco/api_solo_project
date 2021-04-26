@@ -17,8 +17,12 @@ export class User extends BaseEntity {
     public location: string;
 
     @Field(() => Number)
+    @Column({ nullable: true })
+    public popularity?: number;
+
+    @Field(() => Number)
     @Column()
-    public popularity: number;
+    public followers: number;
 }
 
 export default User;

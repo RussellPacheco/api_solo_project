@@ -1,6 +1,4 @@
 import { ApolloServer } from "apollo-server"
-// import bodyParser from "body-parser"
-// import typeDefs from "./schema.js"
 import "reflect-metadata"
 import { createConnection, Connection } from "typeorm"
 import { buildSchema } from "type-graphql"

@@ -8,7 +8,6 @@ module.exports = {
     entities: ["server/entities/**/*.ts"],
     migrations: ["server/migrations/**/*.ts"],
     logging: false,
-    migrationsRun: false /* Disable auto-run migration */,
     cli: {
         "entitiesDir": "server/entities",
         "migrationsDir": "server/migrations",
